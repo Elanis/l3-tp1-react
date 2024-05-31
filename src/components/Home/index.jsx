@@ -5,18 +5,11 @@ export default function Home() {
 		'Dolor'
 	];
 
-	const components = [];
-	for(const element of data) {
-		components.push(
-			<li>{element}</li>
-		);
-	}
-
 	return (
 		<>
 			<div className="app">Bonjour !</div>
 			<ul>
-				{components}
+				{data.map((element) => <li key={element}>{element}</li>)}
 			</ul>
 		</>
 	);

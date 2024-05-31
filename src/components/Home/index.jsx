@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react';
+import useCounter from '../../hooks/useCounter';
+import useCounterSetter from '../../hooks/useCounterSetter';
 
 export default function Home() {
-	const [count, setCount] = useState(0);
+	const count = useCounter();
+	const setCount = useCounterSetter();
+
 	const [count2, setCount2] = useState(0);
 
 	useEffect(() => {

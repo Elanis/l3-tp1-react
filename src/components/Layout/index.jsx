@@ -1,14 +1,12 @@
 import Footer from '../Footer';
 import Header from '../Header';
-import Home from '../Home';
+import { Outlet } from 'react-router-dom';
 
-import './index.css';
-
-export default function App() {
+export default function Layout() {
 	return (
 		<>
 			<Header />
-			<Home />
+			<Outlet />
 			<Footer />
 		</>
 	);

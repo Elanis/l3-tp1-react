@@ -5,6 +5,7 @@ import {
 
 import Contact from '../Contact';
 import Home from '../Home';
+import Form from '../Form';
 import Games from '../Games';
 import Layout from '../Layout';
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
 			{
 				path: "/games",
 				element: <Games />,
+			},
+			{
+				path: "/form",
+				element: <Form />,
 			}
 		]
 	}

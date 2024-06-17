@@ -9,7 +9,7 @@ import Layout from '../Layout';
 
 const router = createBrowserRouter([
 	{
-	    element: <Layout />,
+    element: <Layout />,
 		children: [
 			{
 				path: "/",
